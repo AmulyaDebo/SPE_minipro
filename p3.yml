@@ -9,7 +9,7 @@
         state: started
 
     - name: pull docker image
-      shell: docker pull shahharsh8/speminiproject
+      shell: docker pull amulya365/calcy
 
     - name: running container
-      shell: docker run -it -d shahharsh8/speminiproject
+      shell: docker run -it -d amulya365/calcy
