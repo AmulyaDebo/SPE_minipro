@@ -79,27 +79,28 @@ public class Calculator {
         }
 
         else{
+            logger.info("[FACTORIAL] - " + number1);
             double fact = 1;
             for(int i = 1; i <= number1; i++){
                 fact *= i;}
-            logger.info("Factorial of  " + number1 + " Result : " + fact);
+             logger.info("[RESULT - FACTORIAL] - " + fact);
             return fact;}
     }
 
 
 
     public double squareRoot(double number1) {
-
+        logger.info("[SQ ROOT] - " + number1);
         double result = Math.sqrt(number1);
-        logger.info("Square Root of : " + number1 + " Result : " + result);
+            logger.info("[RESULT - SQ ROOT] - " + result);
         return result;
     }
 
 
     public double power(double var1, double var2) {
-
+        logger.info("[POWER - " + var1 + " RAISED TO] " + var2);
         double result = Math.pow(var1,var2);
-        logger.info("Power: " + var1 + "^" + var2 + " Result : " + Math.pow(var1, var2));
+         logger.info("[RESULT - POWER] - " + result);
         return result;
     }
 
@@ -111,8 +112,9 @@ public class Calculator {
             return Double.NaN;
         }
         else {
+            logger.info("[NATURAL LOG] - " + number1);
         result =  Math.log(number1);
-        logger.info("Natural Logarithm of  " + number1 + " Result : " + Math.log(number1));
+        logger.info("[RESULT - NATURAL LOG] - " + result);
 
         return result;}
     }
