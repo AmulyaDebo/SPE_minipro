@@ -122,5 +122,4 @@ public class Calculator {
         System.err.close();
         System.setErr(System.out);
     }
-
 }
