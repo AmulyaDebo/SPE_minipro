@@ -63,6 +63,12 @@ public class Calculator {
                     System.out.println("\n");
 
                     break;
+                 case 5:
+                   
+                    System.out.println("Exiting....");
+                 
+
+                    break;
                 default:
                     System.out.println("Invalid option....");
                     return;
