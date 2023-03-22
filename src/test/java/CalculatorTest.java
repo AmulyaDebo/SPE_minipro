@@ -40,7 +40,22 @@ public class CalculatorTest {
         assertNotEquals("Finding power for False Positive", 99, calculator.power(4, 3), DELTA);
         assertNotEquals("Finding power for False Positive", -12, calculator.power(5, 3), DELTA);
     }
+        @Test
+    public void multiplyTruePositive(){
+        assertEquals("Finding power for True Positive", 6, calculator.multiply(2, 3), DELTA);
+        assertEquals("Finding power for True Positive", 3, calculator.multiply(1, 3), DELTA);
+        assertEquals("Finding power for True Positive", 12, calculator.multiply(3, 4), DELTA);
+        assertEquals("Finding power for True Positive", 12, calculator.multiply(4, 3), DELTA);
+        assertEquals("Finding power for True Positive", 10, calculator.multiply(5, 2), DELTA);
+    }
 
+    @Test
+    public void multiplyFalsePositive(){
+        assertNotEquals("Finding power for False Positive", 8, calculator.multiply(2, 3), DELTA);
+        assertNotEquals("Finding power for False Positive", -7, calculator.multiply(3, 3), DELTA);
+        assertNotEquals("Finding power for False Positive", 99, calculator.multiply(4, 3), DELTA);
+        assertNotEquals("Finding power for False Positive", -12, calculator.multiply(5, 3), DELTA);
+    }
     @Test
     public void logTruePositive(){
         assertEquals("Finding natural log for True Positive", 0, calculator.naturalLog(1), DELTA);
