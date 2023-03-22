@@ -118,7 +118,7 @@ public class Calculator {
         return result;
     }
     public double multiply(double var1, double var2) {
-        logger.info("[MUL - " + var1 + " and " + var2);
+        logger.info("[MUL - " + var1 + " and] " + var2);
         double result = var1*var2;
         logger.info("[RESULT - MUL] - " + result);
         return result;
