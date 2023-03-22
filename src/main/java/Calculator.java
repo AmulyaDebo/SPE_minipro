@@ -23,7 +23,7 @@ public class Calculator {
         while (true) {
             System.out.println("Scientific Calculator Program. \n Choose operation:");
             System.out.print("1. Factorial\n2. Square root\n3. Power\n4. Natural Logarithm\n" +
-                    "5. Exit\nEnter your choice: ");
+                    "5. Multiply\n6. Exit\n Enter your choice: ");
 
             choice = scanner.nextInt();
 
