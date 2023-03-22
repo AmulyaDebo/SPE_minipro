@@ -63,7 +63,16 @@ public class Calculator {
                     System.out.println("\n");
 
                     break;
-                 case 5:
+                 case 3:
+                    // Power
+                    System.out.print("Enter the first number : ");
+                    number1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    number2 = scanner.nextDouble();
+                    System.out.println(number1 + " * " + number2 + " is : " + calculator.multiply(number1, number2));
+                    System.out.println("\n");
+                    break;
+                 case 6:
                    
                     System.out.println("Exiting....");
                      return;
@@ -106,6 +115,12 @@ public class Calculator {
         logger.info("[POWER - " + var1 + " RAISED TO] " + var2);
         double result = Math.pow(var1,var2);
          logger.info("[RESULT - POWER] - " + result);
+        return result;
+    }
+    public double multiply(double var1, double var2) {
+        logger.info("[MUL - " + var1 + " and " + var2);
+        double result = var1*var2;
+         logger.info("[RESULT - MUL] - " + result);
         return result;
     }
 
