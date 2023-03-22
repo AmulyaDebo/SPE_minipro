@@ -63,7 +63,7 @@ public class Calculator {
                     System.out.println("\n");
 
                     break;
-                 case 3:
+                case 5:
                     // Power
                     System.out.print("Enter the first number : ");
                     number1 = scanner.nextDouble();
@@ -72,10 +72,10 @@ public class Calculator {
                     System.out.println(number1 + " * " + number2 + " is : " + calculator.multiply(number1, number2));
                     System.out.println("\n");
                     break;
-                 case 6:
-                   
+                case 6:
+
                     System.out.println("Exiting....");
-                     return;
+                    return;
 
                 default:
                     System.out.println("Invalid option....");
@@ -97,7 +97,7 @@ public class Calculator {
             double fact = 1;
             for(int i = 1; i <= number1; i++){
                 fact *= i;}
-             logger.info("[RESULT - FACTORIAL] - " + fact);
+            logger.info("[RESULT - FACTORIAL] - " + fact);
             return fact;}
     }
 
@@ -106,7 +106,7 @@ public class Calculator {
     public double squareRoot(double number1) {
         logger.info("[SQ ROOT] - " + number1);
         double result = Math.sqrt(number1);
-            logger.info("[RESULT - SQ ROOT] - " + result);
+        logger.info("[RESULT - SQ ROOT] - " + result);
         return result;
     }
 
@@ -114,13 +114,13 @@ public class Calculator {
     public double power(double var1, double var2) {
         logger.info("[POWER - " + var1 + " RAISED TO] " + var2);
         double result = Math.pow(var1,var2);
-         logger.info("[RESULT - POWER] - " + result);
+        logger.info("[RESULT - POWER] - " + result);
         return result;
     }
     public double multiply(double var1, double var2) {
         logger.info("[MUL - " + var1 + " and " + var2);
         double result = var1*var2;
-         logger.info("[RESULT - MUL] - " + result);
+        logger.info("[RESULT - MUL] - " + result);
         return result;
     }
 
@@ -133,10 +133,10 @@ public class Calculator {
         }
         else {
             logger.info("[NATURAL LOG] - " + number1);
-        result =  Math.log(number1);
-        logger.info("[RESULT - NATURAL LOG] - " + result);
+            result =  Math.log(number1);
+            logger.info("[RESULT - NATURAL LOG] - " + result);
 
-        return result;}
+            return result;}
     }
     public static void disableWarning() {
         System.err.close();
